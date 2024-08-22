@@ -78,6 +78,7 @@ function AboutMe() {
                   <span
                     key={index}
                     className="badge rounded-pill px-3 py-2 skills"
+                    
                   >
                     {skill}
                   </span>

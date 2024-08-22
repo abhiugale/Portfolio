@@ -8,6 +8,11 @@ function Contact() {
     subject: "",
     message: "",
   });
+  const pdfLink = "./assets/Resume/Abhishek_Ugale_Bsc_Cs_2023.pdf";
+  const linkedInLink = "https://www.linkedin.com/in/abhishek-ugale-b877b4213/";
+  const githubLink = "https://github.com/abhiugale";
+  const instagramLink = "https://www.instagram.com/iabhiugale/";
+  const emailLink = "example@example.com";
 
   const [responseMessage, setResponseMessage] = useState("");
 
@@ -64,30 +69,54 @@ function Contact() {
             <p>{responseMessage}</p>
             <p>Say hello at abhiugale2002@gmail.com</p>
             <p>
-              For more info, here's my <a>resume</a>
+              For more info, here's my {""}
+              <a
+                href={pdfLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-links d-inline-block"
+              >
+                Resume
+              </a>
             </p>
             <div className="col-md-8 d-flex justify-content-start">
               <a
-                href="https://www.linkedin.com/in/abhishek-ugale-b877b4213/"
+                href={linkedInLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="social-links d-inline-block"
+                data-bs-toggle="tooltip"
+                title="LinkedIn Profile"
               >
                 <i className="bi bi-linkedin mx-2 fs-2"></i>
               </a>
               <a
-                href="https://github.com/abhiugale"
+                href={githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="social-links d-inline-block"
+                data-bs-toggle="tooltip"
+                title="Github Profile"
               >
                 <i className="bi bi-github mx-2 fs-2"></i>
               </a>
               <a
-                href="abhiugale2002@gmail.com"
+                href={`mailto:${emailLink}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="social-links d-inline-block"
+                data-bs-toggle="tooltip"
+                title="Send Email to abhiugale2002@gmail.com"
               >
                 <i className="bi bi-envelope mx-2 fs-2"></i>
               </a>
               <a
-                href="https://www.instagram.com/iabhiugale/"
+                href={instagramLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="social-links d-inline-block"
+                data-bs-toggle="tooltip"
+                title="Instagram"
               >
                 <i className="bi bi-instagram mx-2 fs-2"></i>
               </a>

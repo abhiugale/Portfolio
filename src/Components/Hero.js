@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function Hero() {
+  const pdfLink = "./assets/Resume/Abhishek_Ugale_Bsc_Cs_2023.pdf";
+  const linkedInLink = "https://www.linkedin.com/in/abhishek-ugale-b877b4213/";
+  const githubLink = "https://github.com/abhiugale";
+  const emailLink = "";
+  useEffect(() => {
+    // Initialize all tooltips after the component mounts
+    const tooltipTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    );
+    const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new window.bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  }, []);
+
   return (
     <section id="hero" className="hero text-white">
       <div className="container">
@@ -32,18 +46,43 @@ function Hero() {
               </div>
               <div className="col-md-8 d-flex justify-content-start">
                 <a
-                  href="https://www.linkedin.com/in/abhishek-ugale-b877b4213/"
+                  href={pdfLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="social-links d-inline-block"
+                  data-bs-toggle="tooltip"
+                  title="View Resume"
+                >
+                  <i class="bi bi-file-earmark-person mx-2 fs-2"></i>
+                </a>
+                <a
+                  href={linkedInLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-links d-inline-block"
+                  data-bs-toggle="tooltip"
+                  title="LinkedIn Profile"
                 >
                   <i className="bi bi-linkedin mx-2 fs-2"></i>
                 </a>
                 <a
-                  href="https://github.com/abhiugale"
+                  href={githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="social-links d-inline-block"
+                  data-bs-toggle="tooltip"
+                  title="Github Profile"
                 >
                   <i className="bi bi-github mx-2 fs-2"></i>
                 </a>
-                <a href="#" className="social-links d-inline-block">
+                <a
+                  href={emailLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-links d-inline-block"
+                  data-bs-toggle="tooltip"
+                  title="Send Email to abhiugale2002@gmail.com"
+                >
                   <i className="bi bi-envelope mx-2 fs-2"></i>
                 </a>
               </div>

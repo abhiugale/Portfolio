@@ -11,8 +11,8 @@ function FeaturedProjects() {
         "./assets/BG-Generator/img-1.png",
         "./assets/BG-Generator/img-2.png",
       ],
-      liveDemoLink: "#",
-      githubLink: "#",
+      liveDemoLink: "",
+      githubLink: "https://github.com/abhiugale/background-generator.git",
     },
     {
       id: 2,
@@ -29,8 +29,8 @@ function FeaturedProjects() {
         "./assets/Event-Management/img-7.png",
         "./assets/Event-Management/img-8.png",
       ],
-      liveDemoLink: "#",
-      githubLink: "#",
+      liveDemoLink: "",
+      githubLink: "https://github.com/abhiugale/event-management.git",
     },
     {
       id: 3,
@@ -48,7 +48,7 @@ function FeaturedProjects() {
         "./assets/Real-Estate/img-8.png",
       ],
       liveDemoLink: "https://realestate-22a2a.web.app/",
-      githubLink: "#",
+      githubLink: "https://github.com/abhiugale/Real-Estate-Project.git",
     },
     {
       id: 4,
@@ -65,12 +65,21 @@ function FeaturedProjects() {
         "./assets/Krishikraft/img-7.png",
         "./assets/Krishikraft/img-8.png",
       ],
-      liveDemoLink: "https://realestate-22a2a.web.app/",
-      githubLink: "#",
+      liveDemoLink: "",
+      githubLink: "https://github.com/abhiugale/KrishiKraft.git",
     },
     // Add more projects as needed
   ];
-
+  const openGithub = (gitLink) => {
+    window.open(gitLink, "_blank");
+  };
+  const openLiveDemo = (liveLink) => {
+    if (!liveLink) {
+      alert("This project is not hosted on live server...");
+    } else {
+      window.open(liveLink, "_blank");
+    }
+  };
   return (
     <section id="work" className="featured-projects py-5">
       <div className="container">
@@ -89,7 +98,7 @@ function FeaturedProjects() {
         <div className="row">
           {projects.map((project) => (
             <div key={project.id} className="col-md-4">
-              <div className="card">
+              <div className="card mt-5">
                 <div
                   id={`carousel-${project.id}`}
                   className="carousel slide"
@@ -145,7 +154,10 @@ function FeaturedProjects() {
                   <p className="card-text">{project.description}</p>
                   <div className="row">
                     <div className="col-md-6 sm-4 mt-2">
-                      <button href={project.liveDemoLink} className="btn">
+                      <button
+                        onClick={() => openLiveDemo(project.liveDemoLink)}
+                        className="btn"
+                      >
                         LIVE DEMO
                         <i
                           className="bi bi-arrow-up-right-circle mx-2"
@@ -158,7 +170,10 @@ function FeaturedProjects() {
                       </button>
                     </div>
                     <div className="col-md-6 sm-4 mt-2">
-                      <button href={project.githubLink} className="btn">
+                      <button
+                        onClick={() => openGithub(project.githubLink)}
+                        className="btn"
+                      >
                         SEE ON GITHUB
                         <i
                           className="bi bi-github mx-2"
