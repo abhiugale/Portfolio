@@ -8,7 +8,8 @@ function Contact() {
     subject: "",
     message: "",
   });
-  const pdfLink = "./assets/Resume/Abhishek_Ugale_Bsc_Cs_2023.pdf";
+  const pdfLink = "./assets/Resume/Abhishek_Ugale_MCA2023.pdf";
+  // const pdfLink = "./assets/Resume/Abhishek_Ugale_Bsc_Cs_2023.pdf";
   const linkedInLink = "https://www.linkedin.com/in/abhishek-ugale-b877b4213/";
   const githubLink = "https://github.com/abhiugale";
   const instagramLink = "https://www.instagram.com/iabhiugale/";
