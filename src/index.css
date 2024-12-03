@@ -90,8 +90,8 @@ body {
 }
 .skills:hover{
   background-color: #0e3ed0;
-  color: "#fff";
-  filter: drop-shadow(3px 2px 5px #ffffff);
+  color: #ffffff;
+  filter: drop-shadow(3px 2px 5px #ff8000);
 
 }
 .contact .container {

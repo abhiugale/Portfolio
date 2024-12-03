@@ -53,22 +53,21 @@ function AboutMe() {
           <div className="col-md-6">
             <div>
               <p>
-                I am always looking to add more skills. Morbi egestas neque eu
-                blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex
-                at purus faucibus tristique ut et dolor.
+                I am always looking to add more skills.
               </p>
               <div className="d-flex flex-wrap gap-3 mt-3">
                 {[
-                  "HTML",
-                  "CSS",
-                  "JavaScript",
                   "Java",
+                  "C++",
+                  "JavaScript",
+                  "My SQL",
                   "React Js",
                   "React Native",
                   "Node Js",
                   "Express Js",
                   "Mongo DB",
-                  "My SQL",
+                  "HTML",
+                  "CSS",
                   "GIT",
                   "Angular",
                   "NPM",
@@ -78,7 +77,6 @@ function AboutMe() {
                   <span
                     key={index}
                     className="badge rounded-pill px-3 py-2 skills"
-                    
                   >
                     {skill}
                   </span>
@@ -98,7 +96,7 @@ function AboutMe() {
                   <h5 className="mb-1">Full Stack Developer Intern</h5>
                 </div>
                 <div>
-                  <p className="fs-6">Aug 2023 — Current</p>
+                  <p className="fs-6">Aug 2023 — Aug 2024</p>
                 </div>
               </div>
               <h6 className="text-success">RADIANT IT SERVICES PVT LTD</h6>
