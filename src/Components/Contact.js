@@ -70,15 +70,15 @@ function Contact() {
             <p>{responseMessage}</p>
             <p>Say hello at abhiugale2002@gmail.com</p>
             <p>
-              For more info, here's my {""}
-              <a
+              For more info, here's contact form...
+              {/* <a
                 href={pdfLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-links d-inline-block"
               >
-                Resume
-              </a>
+               Resume
+              </a> */}
             </p>
             <div className="col-md-8 d-flex justify-content-start">
               <a

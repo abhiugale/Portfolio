@@ -8,12 +8,12 @@ function Hero() {
   const emailLink = "";
   useEffect(() => {
     // Initialize all tooltips after the component mounts
-    const tooltipTriggerList = [].slice.call(
-      document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    );
-    const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new window.bootstrap.Tooltip(tooltipTriggerEl);
-    });
+    // const tooltipTriggerList = [].slice.call(
+    //   document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    // );
+    // const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    //   return new window.bootstrap.Tooltip(tooltipTriggerEl);
+    // });
   }, []);
 
   return (
@@ -21,10 +21,10 @@ function Hero() {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-8">
-            <div class="hero-container" data-aos="fade-in">
+            <div className="hero-container" data-aos="fade-in">
               <h3>Hello 👋 I'm,</h3>
 
-              <h1 class="animate-charcter">Abhishek Ugale</h1>
+              <h1 className="animate-charcter">Abhishek Ugale</h1>
             </div>
             <p>
               A Pune-based FullStack Developer passionate about building
@@ -54,7 +54,7 @@ function Hero() {
                   data-bs-toggle="tooltip"
                   title="View Resume"
                 >
-                  <i class="bi bi-file-earmark-person mx-2 fs-2"></i>
+                  <i className="bi bi-file-earmark-person mx-2 fs-2"></i>
                 </a>
                 <a
                   href={linkedInLink}

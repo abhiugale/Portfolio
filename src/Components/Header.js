@@ -4,7 +4,7 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="#home">
           <h2> ABHISHEK UGALE</h2>
         </a>
         <button

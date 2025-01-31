@@ -1,13 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 function AboutMe() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/more-about-me");
-  };
+  // const handleClick = () => {
+  //   navigate("/more-about-me");
+  // };
   return (
     <section id="about" className="about-me py-5">
       <div className="container">
