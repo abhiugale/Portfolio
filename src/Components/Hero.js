@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 function Hero() {
-  const pdfLink = "./assets/Resume/Abhishek_Ugale_MCA.pdf";
+  const pdfLink = "./assets/Resume/Abhishek_Ugale_MCA_2025.pdf";
   // const pdfLink = "./assets/Resume/Abhishek_Ugale_Bsc_Cs_2023.pdf";
   const linkedInLink = "https://www.linkedin.com/in/abhishek-ugale-b877b4213/";
   const githubLink = "https://github.com/abhiugale";
