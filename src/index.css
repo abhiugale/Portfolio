@@ -13,6 +13,7 @@ body {
 .hero {
   /* background-color: #111; */
   margin-top: 60px;
+  height: 60vh;
 }
 
 .animate-charcter {
@@ -60,7 +61,7 @@ body {
 }
 .img {
   height: 400px;
-  width: 400px;
+  width: 500px;
   border-radius: 20px;
   filter: drop-shadow(5px -7px 14px #ffd3d3);
 }

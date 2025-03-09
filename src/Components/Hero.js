@@ -90,11 +90,11 @@ function Hero() {
             </div>
           </div>
           <div className="col-md-4">
-            <img
-              src="./assets/images/Abhi_ugale.png"
+            {/* <img
+              src="./assets/images/abhi.png"
               alt="Abhi Ugale"
               className="img img-fluid"
-            />
+            /> */}
           </div>
         </div>
       </div>
