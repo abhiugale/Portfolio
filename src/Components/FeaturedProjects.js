@@ -4,6 +4,44 @@ function FeaturedProjects() {
   const projects = [
     {
       id: 1,
+      title: "Movie Recommender Web Application",
+      description:
+        "Developed a movie recommender web application using JSP & Servlet.",
+      imgSrcs: [
+        "./assets/MovieRecommender/img-1.png",
+        "./assets/MovieRecommender/img-2.png",
+        "./assets/MovieRecommender/img-3.png",
+        "./assets/MovieRecommender/img-4.png",
+        "./assets/MovieRecommender/img-5.png",
+        "./assets/MovieRecommender/img-6.png",
+        "./assets/MovieRecommender/img-7.png",
+        "./assets/MovieRecommender/img-8.png",
+      ],
+      liveDemoLink: "",
+      githubLink: "https://github.com/abhiugale/MovieRecommender",
+    },
+    {
+      id: 2,
+      title: "KrishiKraft e-Commerce Web Application",
+      description:
+        "KrishiKraft is a comprehensive agricultural platform developed using HTML, CSS, JavaScript, PHP,and MySQL.Home, Product listing, Services,and Checkout, optimizing user journey and experience, ensuring scalability and performance.",
+      imgSrcs: [
+        "./assets/Krishikraft/img-1.png",
+        "./assets/Krishikraft/img-2.png",
+        "./assets/Krishikraft/img-3.png",
+        "./assets/Krishikraft/img-4.png",
+        "./assets/Krishikraft/img-5.png",
+        "./assets/Krishikraft/img-6.png",
+        "./assets/Krishikraft/img-7.png",
+        "./assets/Krishikraft/img-8.png",
+        "./assets/Krishikraft/img-9.png",
+        "./assets/Krishikraft/img-10.png",
+      ],
+      liveDemoLink: "",
+      githubLink: "",
+    },
+    {
+      id: 3,
       title: "Background Generator Web Application",
       description:
         "Developed a background generator web application using React.js.Enabled users to create visually appealing backgrounds with gradient options and real-time preview.",
@@ -15,7 +53,7 @@ function FeaturedProjects() {
       githubLink: "https://github.com/abhiugale/background-generator.git",
     },
     {
-      id: 2,
+      id: 4,
       title: "Event Management System",
       description:
         "Built a comprehensive event management system with user registrations and ticketing using React and MySQL. Implemented features for event creation, management, promotion, and attendee management.",
@@ -33,7 +71,7 @@ function FeaturedProjects() {
       githubLink: "https://github.com/abhiugale/event-management.git",
     },
     {
-      id: 3,
+      id: 5,
       title: "Real Estate Website",
       description:
         "Orchestrated the creation of key components including Home, Property listing, Mortgage Calculator,and Checkout, optimizing user journey and experience, hosted the project on Firebase, ensuring scalability and performance.",
@@ -50,28 +88,14 @@ function FeaturedProjects() {
       liveDemoLink: "https://realestate-22a2a.web.app/",
       githubLink: "https://github.com/abhiugale/Real-Estate-Project.git",
     },
-    {
-      id: 4,
-      title: "Krishikraft",
-      description:
-        "Orchestrated the creation of key components including Home, Product listing, Services,and Checkout, optimizing user journey and experience, ensuring scalability and performance.",
-      imgSrcs: [
-        "./assets/Krishikraft/img-1.png",
-        "./assets/Krishikraft/img-2.png",
-        "./assets/Krishikraft/img-3.png",
-        "./assets/Krishikraft/img-4.png",
-        "./assets/Krishikraft/img-5.png",
-        "./assets/Krishikraft/img-6.png",
-        "./assets/Krishikraft/img-7.png",
-        "./assets/Krishikraft/img-8.png",
-      ],
-      liveDemoLink: "",
-      githubLink: "https://github.com/abhiugale/KrishiKraft.git",
-    },
     // Add more projects as needed
   ];
   const openGithub = (gitLink) => {
-    window.open(gitLink, "_blank");
+    if (!gitLink) {
+      alert("This project is not on github...");
+    } else {
+      window.open(gitLink, "_blank");
+    }
   };
   const openLiveDemo = (liveLink) => {
     if (!liveLink) {

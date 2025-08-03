@@ -52,15 +52,15 @@ function AboutMe() {
           </div>
           <div className="col-md-6">
             <div>
-              <p>
-                I am always looking to add more skills.
-              </p>
+              <p>I am always looking to add more skills.</p>
               <div className="d-flex flex-wrap gap-3 mt-3">
                 {[
                   "Java",
                   "C++",
                   "JavaScript",
                   "My SQL",
+                  "SpringBoot",
+                  "Hibernate",
                   "React Js",
                   "React Native",
                   "Node Js",
@@ -85,7 +85,7 @@ function AboutMe() {
             </div>
           </div>
         </div>
-        <div className="row mt-5">
+        {/* <div className="row mt-5">
           <div className="col-md-4 text-uppercase mb-5">
             <h2 style={{ fontSize: "30px" }}>My Experience</h2>
           </div>
@@ -121,7 +121,7 @@ function AboutMe() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
