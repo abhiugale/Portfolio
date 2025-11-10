@@ -4,6 +4,28 @@ function FeaturedProjects() {
   const projects = [
     {
       id: 1,
+      title: "SmartERP",
+      description: "Developed a SmartERP System For College Management.",
+      imgSrcs: [
+        "./assets/SmartERP/img-1.png",
+        "./assets/SmartERP/img-2.png",
+        "./assets/SmartERP/img-3.png",
+        "./assets/SmartERP/img-4.png",
+        "./assets/SmartERP/img-5.png",
+        "./assets/SmartERP/img-6.png",
+        "./assets/SmartERP/img-7.png",
+        "./assets/SmartERP/img-8.png",
+        "./assets/SmartERP/img-9.png",
+        "./assets/SmartERP/img-10.png",
+        "./assets/SmartERP/img-11.png",
+        "./assets/SmartERP/img-12.png",
+        "./assets/SmartERP/img-13.png",
+      ],
+      liveDemoLink: "",
+      githubLink: "https://github.com/abhiugale/MovieRecommender",
+    },
+    {
+      id: 2,
       title: "Movie Recommender Web Application",
       description:
         "Developed a movie recommender web application using JSP & Servlet.",
@@ -21,7 +43,7 @@ function FeaturedProjects() {
       githubLink: "https://github.com/abhiugale/MovieRecommender",
     },
     {
-      id: 2,
+      id: 3,
       title: "KrishiKraft e-Commerce Web Application",
       description:
         "KrishiKraft is a comprehensive agricultural platform developed using HTML, CSS, JavaScript, PHP,and MySQL.Home, Product listing, Services,and Checkout, optimizing user journey and experience, ensuring scalability and performance.",
@@ -41,7 +63,7 @@ function FeaturedProjects() {
       githubLink: "",
     },
     {
-      id: 3,
+      id: 4,
       title: "Background Generator Web Application",
       description:
         "Developed a background generator web application using React.js.Enabled users to create visually appealing backgrounds with gradient options and real-time preview.",
@@ -53,7 +75,7 @@ function FeaturedProjects() {
       githubLink: "https://github.com/abhiugale/background-generator.git",
     },
     {
-      id: 4,
+      id: 5,
       title: "Event Management System",
       description:
         "Built a comprehensive event management system with user registrations and ticketing using React and MySQL. Implemented features for event creation, management, promotion, and attendee management.",
@@ -71,7 +93,7 @@ function FeaturedProjects() {
       githubLink: "https://github.com/abhiugale/event-management.git",
     },
     {
-      id: 5,
+      id: 6,
       title: "Real Estate Website",
       description:
         "Orchestrated the creation of key components including Home, Property listing, Mortgage Calculator,and Checkout, optimizing user journey and experience, hosted the project on Firebase, ensuring scalability and performance.",

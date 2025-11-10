@@ -8,7 +8,7 @@ function Contact() {
     subject: "",
     message: "",
   });
-  const pdfLink = "./assets/Resume/Abhishek_Ugale_MCA2023.pdf";
+  const pdfLink = "./assets/Resume/Abhishek_Sunil_Ugale_26.pdf";
   // const pdfLink = "./assets/Resume/Abhishek_Ugale_Bsc_Cs_2023.pdf";
   const linkedInLink = "https://www.linkedin.com/in/abhishek-ugale-b877b4213/";
   const githubLink = "https://github.com/abhiugale";
@@ -71,14 +71,14 @@ function Contact() {
             <p>Say hello at abhiugale2002@gmail.com</p>
             <p>
               For more info, here's contact form...
-              {/* <a
+              <a
                 href={pdfLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-links d-inline-block"
               >
                Resume
-              </a> */}
+              </a>
             </p>
             <div className="col-md-8 d-flex justify-content-start">
               <a
