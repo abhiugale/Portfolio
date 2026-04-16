@@ -139,7 +139,7 @@ export const SKILLS: Skill[] = [
 export const EXPERIENCES: Experience[] = [
   {
     id: 1,
-    role: 'Software Developer Intern (Tech Lead)',
+    role: 'Software Developer Engineer (Tech Lead)',
     company: 'Nexoraa Technosolve Pvt. Ltd.',
     period: 'Dec 2025 — Present',
     description: [
@@ -151,6 +151,6 @@ export const EXPERIENCES: Experience[] = [
       'Serving as Technical Lead to mentor junior developers, conducting rigorous code reviews and defining software architecture standards.',
       'Driving technical excellence by championing modular design patterns and ensuring robust code quality across all project verticals.'
     ],
-    technologies: ['React.js', 'Nest.js', 'MongoDB', 'Flutter', 'WebSocket', 'REST APIs', 'Node.js'],
+    technologies: ['React.js', 'Nest.js', 'MongoDB', 'Flutter', 'WebSocket', 'REST APIs'],
   }
 ];
